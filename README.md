@@ -1,8 +1,10 @@
 # PERTANYAAN
 1. Apa yang dimaksud dengan Laravel Sanctum?
-   Laravel Sanctum adalah paket untuk Laravel yang menyediakan solusi sederhana dalam manajemen otentikasi berbasis token untuk aplikasi single-page (SPA), aplikasi mobile, dan API sederhana. Dengan Sanctum, Laravel memungkinkan aplikasi untuk mengeluarkan dan mengelola token API dan session-based authentication tanpa harus menggunakan Laravel Passport, yang lebih kompleks.
+
+Laravel Sanctum adalah paket untuk Laravel yang menyediakan solusi sederhana dalam manajemen otentikasi berbasis token untuk aplikasi single-page (SPA), aplikasi mobile, dan API sederhana. Dengan Sanctum, Laravel memungkinkan aplikasi untuk mengeluarkan dan mengelola token API dan session-based authentication tanpa harus menggunakan Laravel Passport, yang lebih kompleks.
    
 2. Bagaimana cara mengelola token autentikasi di Laravel?
+
    Instalasi Sanctum: Instal Sanctum melalui Composer: composer require laravel/sanctum
 
    Konfigurasi Sanctum: Publikasikan konfigurasi Sanctum dengan perintah: php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
@@ -26,6 +28,7 @@ Copy code
 Authorization: Bearer <token>
 
 3. Sebutkan langkah-langka untuk menambahkan otorisasi berbasis peran dalam API!
+   
    Otorisasi berbasis peran memungkinkan kontrol akses API berdasarkan peran pengguna (misalnya, admin, user). Berikut adalah langkah-langkahnya:
 
 Tambahkan Kolom role pada Tabel users: Buat kolom role dalam tabel users yang dapat menampung jenis peran pengguna: php artisan make:migration add_role_to_users_table --table=users
